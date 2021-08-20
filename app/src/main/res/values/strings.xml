@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">DemoGame</string>
+    <string name="gold_coin">Gold Coin</string>
+</resources>
