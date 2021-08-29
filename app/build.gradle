@@ -44,4 +44,5 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     implementation 'com.orhanobut:dialogplus:1.11@aar'
+    implementation 'com.blankj:utilcode:1.24.7'
 }

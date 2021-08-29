@@ -13,7 +13,7 @@ class DialogSuccess(i: Int, i2: Int, activity: Activity) :
         val imgClose = (dialogPlus?.findViewById(R.id.btn_dialog_custom_ok) as ImageView)
         val successImg = (dialogPlus?.findViewById(R.id.success_img) as ImageView)
         val jifenTv = (dialogPlus?.findViewById(R.id.jifen_tv) as TextView)
-        jifenTv.text = "+$i"
+        jifenTv.text = "+$i COIN"
         successImg.clipToOutline = true
         successImg.setImageResource(i2)
         imgClose.setOnClickListener(this)

@@ -2,6 +2,7 @@ package com.shockwave.demogame
 
 import android.content.Context
 import android.view.LayoutInflater
+import com.blankj.utilcode.util.ScreenUtils
 import com.orhanobut.dialogplus.DialogPlus
 import com.orhanobut.dialogplus.ViewHolder
 
@@ -15,7 +16,7 @@ abstract class BaseDialog(context: Context, gravity: Int, isCancel: Boolean) {
         val view = LayoutInflater.from(context).inflate(getLayoutId(), null)
         dialogPlus = DialogPlus.newDialog(context)
             .setGravity(gravity)
-            .setContentWidth(600)
+            .setContentWidth(ScreenUtils.getScreenWidth())
             .setCancelable(isCancel)
             .setContentBackgroundResource(android.R.color.transparent)
             .setContentHolder(ViewHolder(view))
